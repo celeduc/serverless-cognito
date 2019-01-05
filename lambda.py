@@ -17,7 +17,7 @@ def return_html(txt, title, head):
     # head  = pprint.PrettyPrinter().pformat(head)
 
     return {
-        'statusCode': '200', 
+        'statusCode': 200, 
         'body': '<center><h1>'+title+'</h1><a href = "./login">login</a> | <a href = "./register">register</a> | <a href = "https://marek.rocks">marek.rocks</a> | <a href = "https://github.com/marekq/serverless-cognito">sourcecode</a><br><br>'+str(txt)+'</center><br>'+str(head), 
         'headers': {'Content-Type': 'text/html', 'charset': 'utf-8'}
     } 
